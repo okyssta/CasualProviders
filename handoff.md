@@ -8,7 +8,7 @@ per-provider-card control to the Models settings page, both driven by a curated 
 providers with their credential reference and default model already resolved.
 
 - **Source:** `/home/kyssta/Documents/Codes/CasualProviders/`
-- **Remote:** `https://github.com/kyssta-exe/CasualProviders.git`
+- **Remote:** `https://github.com/okyssta/CasualProviders.git`
 - **Installed into:** `~/.dsh/profiles/web` (via `dsh plugin --profile web add <path>` → `link:`)
 - **Targets:** dsh `0.2.0-rc.2` (the version installed at `~/.local/bin/dsh`)
 
@@ -40,7 +40,7 @@ attention, how they group, where a pasted key belongs, and which model to pick w
 ## Install
 
 ```sh
-dsh plugin --profile web add github:kyssta-exe/CasualProviders   # see caveat below
+dsh plugin --profile web add github:okyssta/CasualProviders   # see caveat below
 # or, from a built checkout:
 dsh plugin --profile web add /path/to/CasualProviders
 dsh web --no-open     # then: Settings -> Models, scroll to Quick Setup
@@ -206,7 +206,7 @@ visible as a full-page "Failed to load plugins" screen.
 
 ## Current state
 
-- **Pushed** to `github.com/kyssta-exe/CasualProviders`, branch `main`, public. 3 commits at time of
+- **Pushed** to `github.com/okyssta/CasualProviders`, branch `main`, public. 3 commits at time of
   writing:
   - `4b2c31b` CasualProviders: one-click provider setup for the DeepSeek Harness
   - `574ac0f` Fix browser activation, and add the tests that would have caught it
@@ -222,7 +222,7 @@ visible as a full-page "Failed to load plugins" screen.
 
 ## Suggested next steps
 
-1. **Decide the install story.** As shipped, `github:kyssta-exe/CasualProviders` will not load, because a
+1. **Decide the install story.** As shipped, `github:okyssta/CasualProviders` will not load, because a
    git install never runs `build`. Either add a release workflow that runs `pnpm pack` and attaches the
    tarball, or commit `lib/` (ugly, but it is what makes a plain git install work today).
 2. **Prune the catalog against a newer pi-ai.** `opencode` (68 models) and the `*-token-plan-*` and
